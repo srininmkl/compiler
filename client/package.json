@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "0.18.0",
+    "express": "^4.16.4",
     "lodash": "^4.17.11",
     "prop-types": "15.6.1",
     "react": "16.7.0",
@@ -17,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rm -rf ../server/build && mv build ../server/build",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "buildwin": "react-scripts build && rmdir /S /Q ..\\server\\build\\ && move build ..\\server\\build"
