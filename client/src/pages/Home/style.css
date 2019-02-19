@@ -1,0 +1,27 @@
+
+
+.formdiv-1{
+    
+    width:50vw;
+    height:90vh;
+    float: left;
+    background: #F4F4F4;
+}
+
+.formdiv-2{
+    width:50vw;
+    height:90vh;
+    float: left;
+    background: #F8F8F8;
+}
+
+.formCenter{
+    position: relative;
+    top:50%;
+    width:70%;
+    height: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border:none;
+
+}

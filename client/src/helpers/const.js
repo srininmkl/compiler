@@ -1,0 +1,8 @@
+export default {
+    SELECT:'SELECT',
+    PROCESSING:'PROCESSING',
+    COMPLETED:'COMPLETED',
+    VOICE:'VOICE',
+    FACE:'FACE', 
+    SIGNATURE:'SIGNATURE'
+}
