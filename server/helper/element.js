@@ -14,11 +14,14 @@ class Element {
             this.value += (value);
         this.value += ("'");
     }
-    createElement(name, validations) {
+    createElement(name, type,validations) {
         if(name === "input"){
         this.value += ("<");
-        this.value += (name);
-        this.value += (" onchange='(function(e){ let value= e.value;let failed = false; " + this.createOnchange(validations) + " if(!failed){e.style.border = \"1px solid #ccc\"}}(this))'");
+        this.value += (name +" ");
+        if(type !== "submit"){
+            this.value += (" onchange='(function(e){ let value= e.value;let failed = false; " + this.createOnchange(validations) + " if(!failed){e.style.border = \"1px solid #ccc\"}}(this))'");
+        }
+        
         }else if(name === "h2"){
             this.value += ("<");
             this.value += (name);
